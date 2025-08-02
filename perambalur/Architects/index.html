@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
+            <!-- Primary Keywords -->
+<meta name="keywords" content="JPJ Builders, JPJ Builders Tamil Nadu, JPJ Builders Perambalur, Tamil Nadu construction company, Perambalur builders, residential builders Tamil Nadu, commercial construction Perambalur, building contractors Tamil Nadu, JPJ Builders.in">
+
+<!-- Service‑Specific Keywords -->
+<meta name="keywords" content="residential construction Tamil Nadu, commercial construction Perambalur, industrial construction Tamil Nadu, building renovation Perambalur, structural design builders Tamil Nadu, vastu consultants Perambalur">
+
+<!-- Offerings & Features -->
+<meta name="keywords" content="3D elevation design, prefab homes Tamil Nadu, interior design Tamil Nadu, modular kitchen contractors Tamil Nadu, building estimation services, turnkey project contractors">
+
+<!-- Regional Keywords -->
+<meta name="keywords" content="Tamil Nadu builders near me, Perambalur construction services, best builders in Tamil Nadu, Perambalur civil contractors, local builders Tamil Nadu">
+
+<!-- Branding & Call‑to‑Action Keywords -->
+<meta name="keywords" content="trusted builder Perambalur, certified builders Tamil Nadu, customer‑satisfaction construction Perambalur, ISO certified builders, JPJ Builders projects portfolio">
     <link rel="stylesheet" href="style.css">
     <title>JPJ Builders - Architects & Interior Designs</title>
     <meta charset="utf-8">
@@ -317,7 +331,65 @@
   /* font-weight: bold; */
  }
  </style>
+<!--stick contact-->
+<style>
+      /* Sticky Contact Button */
+    .contact-tab {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      z-index: 9999;
+    }
 
+    .contact-tab label {
+      background: #0077cc;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px 0 0 8px;
+      cursor: pointer;
+      font-weight: bold;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      user-select: none;
+    }
+
+    /* Hidden Checkbox Toggle */
+    #contact-toggle {
+      display: none;
+    }
+
+    /* Contact Panel */
+    .contact-panel {
+      position: fixed;
+      top: 25%;
+      right: -300px;
+      width: 300px;
+      height: 50%;
+      background: lavender;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+      padding: 20px;
+      box-sizing: border-box;
+      transition: right 0.3s ease;
+      z-index: 998;
+    }
+
+    /* Show Panel When Checked */
+    #contact-toggle:checked ~ .contact-panel {
+      right: 0;
+    }
+
+    /* Contact Content */
+    .contact-panel h2 {
+      margin-top: 0;
+      font-size: 22px;
+      color: #0077cc;
+    }
+
+    .contact-panel p {
+      margin: 10px 0;
+    }
+</style>
   </head>
   <body>
     <header>    
@@ -716,7 +788,22 @@
  </div>
   </section>
 
+<!--Stick Contact-->
+<!-- Sticky Tab -->
+<div class="contact-tab">
+  <label for="contact-toggle">Contact</label>
+</div>
 
+<!-- Hidden Checkbox Toggle -->
+<input type="checkbox" id="contact-toggle">
+
+<!-- Contact Panel -->
+<div class="contact-panel">
+  <h2>Contact Us</h2>
+  <p><strong>Phone:</strong> +91 93618 79797 / +91 96775 80986</p>
+  <p><strong>Email:</strong> jpjrino93@gmail.com</p>
+  <p><strong>Address:</strong><br>No.36, Panimaya Matha Complex,<br>Perambalur, Tamil Nadu - 621212</p>
+</div>
 
   <!-- footer -->
     <nav class="m-0 navbar-expand-lg bg-body-primary" >

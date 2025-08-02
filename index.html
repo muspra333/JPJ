@@ -1,6 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
+      <!-- Primary Keywords -->
+<meta name="keywords" content="JPJ Builders, JPJ Builders Tamil Nadu, JPJ Builders Perambalur, Tamil Nadu construction company, Perambalur builders, residential builders Tamil Nadu, commercial construction Perambalur, building contractors Tamil Nadu, JPJ Builders.in">
+
+<!-- Service‑Specific Keywords -->
+<meta name="keywords" content="residential construction Tamil Nadu, commercial construction Perambalur, industrial construction Tamil Nadu, building renovation Perambalur, structural design builders Tamil Nadu, vastu consultants Perambalur">
+
+<!-- Offerings & Features -->
+<meta name="keywords" content="3D elevation design, prefab homes Tamil Nadu, interior design Tamil Nadu, modular kitchen contractors Tamil Nadu, building estimation services, turnkey project contractors">
+
+<!-- Regional Keywords -->
+<meta name="keywords" content="Tamil Nadu builders near me, Perambalur construction services, best builders in Tamil Nadu, Perambalur civil contractors, local builders Tamil Nadu">
+
+<!-- Branding & Call‑to‑Action Keywords -->
+<meta name="keywords" content="trusted builder Perambalur, certified builders Tamil Nadu, customer‑satisfaction construction Perambalur, ISO certified builders, JPJ Builders projects portfolio">
+
+
     <link rel="stylesheet" href="style.css">
     <title>JPJ Builders - Architects & Interior Designs</title>
     <meta charset="utf-8">
@@ -378,12 +394,126 @@
       .slides { width: 100%; } /* 1 per row */
     }
   </style>
+  
+  <!--chart styles-->
+   <style>
+    .chart {
+      position: relative;
+      max-width: 1200px;
+      margin: auto;
+      padding-top: 40px;
+    }
+
+    .node {
+      background: #e0ecff;
+      border: 2px solid #5b9bd5;
+      border-radius: 6px;
+      padding: 10px 16px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      min-width: 160px;
+    }
+
+    .level {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin: 60px 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    #chart_svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+      .level {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+      }
+      #chart_svg{
+          position:;
+      }
+    }
+</style>
+
+<!--stick contact-->
+<style>
+      /* Sticky Contact Button */
+    .contact-tab {
+      position: fixed;
+      top: 65%;
+      right: 0;
+      transform: translateY(-50%);
+      z-index: 9999;
+    }
+
+    .contact-tab label {
+      background: #0077cc;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px 0 0 8px;
+      cursor: pointer;
+      font-weight: bold;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      user-select: none;
+    }
+
+    /* Hidden Checkbox Toggle */
+    #contact-toggle {
+      display: none;
+    }
+
+    /* Contact Panel */
+    .contact-panel {
+      position: fixed;
+      top: 25%;
+      right: -300px;
+      width: 300px;
+      height: 50%;
+      background: lavender;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+      padding: 20px;
+      box-sizing: border-box;
+      transition: right 0.3s ease;
+      z-index: 998;
+    }
+
+    /* Show Panel When Checked */
+    #contact-toggle:checked ~ .contact-panel {
+      right: 0;
+    }
+
+    /* Contact Content */
+    .contact-panel h2 {
+      margin-top: 0;
+      font-size: 22px;
+      color: #0077cc;
+    }
+
+    .contact-panel p {
+      margin: 10px 0;
+    }
+</style>
+
 
   </head>
   <body>
-    <header>    
+    <header>
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg fixed-top">
+    
   <div class="container-fluid">
     <!-- Logo -->
     <a class="navbar-brand" href="#">
@@ -401,7 +531,7 @@
       <!-- Construction Icon (Spinning Gear) -->
 <dotlottie-wc
   src="https://lottie.host/9cca79a5-1b52-4758-a659-809c6a936430/S8c604E2MH.lottie"
-  style="width: 100px;height: 100px"
+  style="width: 60px;height: 60px"
   speed="1"
   autoplay
   loop
@@ -433,7 +563,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="Services.html">Services</a>
         </li>
 
         <li class="nav-item">
@@ -441,7 +571,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="about.html">About Us</a>
         </li>
 
         <li class="nav-item">
@@ -471,17 +601,60 @@
   <!-- Foreground Content -->
   <section class="content">
     <h2>Our Construction Expertise</h2>
-    <p>
-      We deliver civil, structural, and architectural excellence with cutting-edge technology.
-    </p>
+    <!--chart into expertise-->
+    <div class="chart">
+
+  <!-- SVG Connectors -->
+  <svg id="chart_svg">
+    <!-- Owner to Construction Manager -->
+    <line x1="400" y1="60" x2="300" y2="160" stroke="#5b9bd5" stroke-width="2"/>
+    <!-- Owner to Architect -->
+    <line x1="400" y1="60" x2="500" y2="160" stroke="#5b9bd5" stroke-width="2"/>
+    <!-- Construction Manager to Project Manager -->
+    <line x1="300" y1="180" x2="300" y2="320" stroke="#5b9bd5" stroke-width="2"/>
+    <!-- Architect to Consultant -->
+    <line x1="500" y1="180" x2="500" y2="280" stroke="#5b9bd5" stroke-width="2"/>
+    <!-- Project Manager to bottom four -->
+    <line x1="300" y1="300" x2="140" y2="380" stroke="#5b9bd5" stroke-width="2"/>
+    <line x1="300" y1="300" x2="300" y2="380" stroke="#5b9bd5" stroke-width="2"/>
+    <line x1="300" y1="300" x2="550" y2="380" stroke="#5b9bd5" stroke-width="2"/>
+    <line x1="300" y1="300" x2="700" y2="380" stroke="#5b9bd5" stroke-width="2"/>
+  </svg>
+
+  <!-- Level 1 -->
+  <div class="level" style="margin-top: 0;">
+    <div class="node" style="margin: auto;">Owner / Client</div>
+  </div>
+
+  <!-- Level 2 -->
+  <div class="level">
+    <div class="node" style="margin-left: 200px;">Construction Manager</div>
+    <div class="node" style="margin-right: 200px;">Architect</div>
+  </div>
+
+  <!-- Level 3 -->
+  <div class="level">
+    <div class="node" style="margin-left: 200px;">Project Manager</div>
+    <div class="node" style="margin-right: 200px;">Consultant</div>
+  </div>
+
+  <!-- Level 4 -->
+  <div class="level">
+    <div class="node">Subcontractors</div>
+    <div class="node">Suppliers</div>
+    <div class="node">Field Staff</div>
+    <div class="node">Office Staff</div>
+  </div>
+
+</div>
   </section>
 
 
   <!-- construction display -->
    <div id="headers">
-    <h2>Construction Categorise</h2>
+    <h2>Our Construction Categorise</h2>
     <div class="category-buttons">
-      <button class="filter-btn active" data-category="all">All</button>
+      <!--<button class="filter-btn active" data-category="all">All</button>-->
       <button class="filter-btn" data-category="Architects">Architects</button>
       <button class="filter-btn" data-category="Structural">Structural Engineering</button>
       <button class="filter-btn" data-category="Civil">Civil Engineering</button>
@@ -572,7 +745,22 @@
   </section>
 
 
+<!--Stick Contact-->
+<!-- Sticky Tab -->
+<div class="contact-tab">
+  <label for="contact-toggle">Contact</label>
+</div>
 
+<!-- Hidden Checkbox Toggle -->
+<input type="checkbox" id="contact-toggle">
+
+<!-- Contact Panel -->
+<div class="contact-panel">
+  <h2>Contact Us</h2>
+  <p><strong>Phone:</strong> +91 93618 79797 / +91 96775 80986</p>
+  <p><strong>Email:</strong> jpjrino93@gmail.com</p>
+  <p><strong>Address:</strong><br>No.36, Panimaya Matha Complex,<br>Perambalur, Tamil Nadu - 621212</p>
+</div>
 
 
 
@@ -589,7 +777,7 @@
 
     <div class="stat-box">
       <i class="fa-solid fa-file-lines stat-icon"></i>
-      <h2>16</h2>
+      <h2>124</h2>
       <p>Projects Complete</p>
     </div>
 
@@ -601,7 +789,7 @@
 
     <div class="stat-box">
       <i class="fa-solid fa-globe stat-icon"></i>
-      <h2>25</h2>
+      <h2>124</h2>
       <p>Satisfied Clients</p>
     </div>
   </section>
@@ -779,7 +967,7 @@
 
   <!-- brands we worked -->
    <div class="slider-container">
-    <h1 style="text-align: center;color:black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Project Owners</h1>
+    <h1 style="text-align: center;color:black;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Our Valuable Clients</h1>
   <div class="slider-track">
     
     <!-- Duplicate the image list to create a smooth loop -->
@@ -929,7 +1117,7 @@ filterButtons.forEach(button => {
 });
 
 // Show all projects initially
-filterProjects('all');
+// filterProjects('all');
 
  </script>
 
